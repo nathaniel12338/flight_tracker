@@ -1,3 +1,3 @@
-Script User FLIGHTRADAR API to get details about local flight in Nigeria
+Script uses FLIGHTRADAR API  - https://pypi.org/project/FlightRadarAPI/ to get details about local flights in Nigeria
 
-Run flight.py to get details of Local delayed flights in Nigeria
+Run flight.py to get details of local delayed flights 

@@ -11,8 +11,8 @@
     "NGL" : {"name": "Max Air", "iata" : "VM"},
     "OLA" : {"name": "Overland Airways", "iata" : "OF"},
     "UNA" : {"name": "United Nigeria Airline", "iata" : "U5"},
-    "VBR" : {"name": "XEjet", "iata" : "U0"},
-    "BAW" : {"name" : "British Airways", "iata": "BA"}
+    "VBR" : {"name": "XEjet", "iata" : "U0"}
+    
 }
 
 

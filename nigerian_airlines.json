@@ -1,0 +1,19 @@
+{
+    "NIG" : {"name": "Aero", "iata" : "N2"},
+    "APK" : {"name": "Air Peace", "iata" : "P4"}, 
+    "AJK" : {"name": "Allied Air", "iata" : ""},
+    "ARA" : {"name": "Arik Air", "iata" : "w3"},
+    "AZM" : {"name": "Azman", "iata" : "ZQ"},
+    "DAV" : {"name": "Dornier Avuation Nigerial", "iata" : ""},
+    "Q9" : {"name": "Green Africa", "iata" : "GWG"},
+    "IAN" : {"name": "Ibom Air", "iata" : "QI"},
+    "QNK" : {"name": "kabo Air", "iata" : "N2"},
+    "NGL" : {"name": "Max Air", "iata" : "VM"},
+    "OLA" : {"name": "Overland Airways", "iata" : "OF"},
+    "UNA" : {"name": "United Nigeria Airline", "iata" : "U5"},
+    "VBR" : {"name": "XEjet", "iata" : "U0"},
+    "BAW" : {"name" : "British Airways", "iata": "BA"}
+}
+
+
+

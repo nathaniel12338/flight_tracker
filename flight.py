@@ -49,8 +49,8 @@ def get_airline_flights(airlineICAO):
 
             if "Delayed" in status:                 
                 print(f"Flight {FlightNumber} of {airline_name} has been delayed\nStatus: {status}\nOrigin: {origin}\nDestination: {destination}\nInitial Departure Time : {initial_departure}\nInitial arrival time: {initial_arrival}\nNew departure time : {new_departure}\nNew arrival time: {new_arrival}\n\n")  
-            elif not "Delayed" in status:
-                print(f"Flight {FlightNumber} of {airline_name}\nStatus: {status}\nOrigin: {origin}\nDestination: {destination}\nInitial Departure Time : {initial_departure}\nInitial arrival time: {initial_arrival}\nNew departure time : {new_departure}\nNew arrival time: {new_arrival}\n\n") 
+            # elif not "Delayed" in status:
+            #     print(f"Flight {FlightNumber} of {airline_name}\nStatus: {status}\nOrigin: {origin}\nDestination: {destination}\nInitial Departure Time : {initial_departure}\nInitial arrival time: {initial_arrival}\nNew departure time : {new_departure}\nNew arrival time: {new_arrival}\n\n") 
 
 
 def main():

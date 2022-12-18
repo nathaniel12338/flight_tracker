@@ -66,7 +66,7 @@ def main():
 
 
 if __name__ == '__main__':
-    get_airline_flights("BAW")
+    main()
     
     
 

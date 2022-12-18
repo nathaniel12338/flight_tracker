@@ -1,0 +1,2 @@
+FlightRadar24==0.3.1
+pytz==2022.6

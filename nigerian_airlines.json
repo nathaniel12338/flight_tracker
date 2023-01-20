@@ -4,7 +4,7 @@
     "AJK" : {"name": "Allied Air", "iata" : ""},
     "ARA" : {"name": "Arik Air", "iata" : "w3"},
     "AZM" : {"name": "Azman", "iata" : "ZQ"},
-    "DAV" : {"name": "Dornier Avuation Nigerial", "iata" : ""},
+    "DAV" : {"name": "Dornier Aviation Nigerial", "iata" : ""},
     "Q9" : {"name": "Green Africa", "iata" : "GWG"},
     "IAN" : {"name": "Ibom Air", "iata" : "QI"},
     "QNK" : {"name": "kabo Air", "iata" : "N2"},
@@ -12,6 +12,8 @@
     "OLA" : {"name": "Overland Airways", "iata" : "OF"},
     "UNA" : {"name": "United Nigeria Airline", "iata" : "U5"},
     "VBR" : {"name": "XEjet", "iata" : "U0"}
+
+
     
 }
 

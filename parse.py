@@ -3,12 +3,23 @@ import datetime, pytz
 from pytz import timezone
 
 
-def parse_timedetails(time_details): 
+
+def parse_timedetails(time_details):
+     
      
     
     content = json.loads(time_details)
 
-    lagos = timezone("Etc/GMT+1")
+    lagos = timezone("Africa/Abidjan")
+    # content = tz.gettz('UTC')
+    # content = tz.gettz('Asia/Kolkata')
+    # content = datetime.strptime('2011-01-21 02:37:21', '%Y-%m-%d %H:%M:%S')
+    # utc = utc.replace(tzinfo=)
+    # central = utc.astimezone(content)
+    
+    #lagos = timezone("US/Eastern")
+    
+    
 
     for each in content.keys():
         if each == "historical": pass
@@ -18,7 +29,7 @@ def parse_timedetails(time_details):
                 value = content[each][key_]
                 if value == None: pass
                 else:
-                    formatted = lagos.localize(datetime.datetime.fromtimestamp(int(value)))
+                    formatted = lagos.localize(datetime.datetime.utcfromtimestamp(int(value)))
                     content[each][key_] = str(formatted)
     
     
@@ -37,11 +48,7 @@ def get_airline_name(airlineICAO):
 
 
 if __name__ == '__main__':
-    with open("time_Details.json", "r") as ngn:
-        ngn_airlines = json.load(ngn)
-
-
-    parse_timedetails(str(ngn_airlines))
+    pass
 
 
 

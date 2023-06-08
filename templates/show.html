@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title %}Show Data{% endblock %}
+
+{% block header %}Show Data{% endblock %}
+
+{% block body %}
+    <a href="{{ url_for('index') }}" class="btn btn-primary">Back Home</a>
+   
+    <div class="card-body">
+        <form action="{{ url_for('proses_edit') }}" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                           
+                        </div>
+                    </div>
+                    <input type="hidden" name="id" value="{{ data.id }}">
+                    <input type="text" id="name" class="form-control" placeholder="Input Name" name="name" value="{{ data.name }}">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                    </div>
+                    <input type="email" id="email" class="form-control" placeholder="Input Email" name="email" value="{{ data.email }}" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            
+                        </div>
+                    </div>
+                    <input type="tel" id="phone" class="form-control" placeholder="Input Phone" name="phone" value="{{ data.phone }}" pattern="[0-9]{10,15}" title="Please enter a valid phone number" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">#</div>
+                    </div>
+                    <textarea name="address" id="address" class="form-control" placeholder="Input Address" required="required" autocomplete="off">{{ data.address }}</textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">#</div>
+                    </div>
+                    <select id="gender" class="form-control" name="gender">
+                        <option value="male" {% if data.gender == 'male' %}selected{% endif %}>Male</option>
+                        <option value="female" {% if data.gender == 'female' %}selected{% endif %}>Female</option>
+                        <option value="other" {% if data.gender == 'other' %}selected{% endif %}>Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-sm" name="submit">Submit</button>
+                <button type="reset" class="btn btn-danger btn-sm">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    
+{% endblock %}
